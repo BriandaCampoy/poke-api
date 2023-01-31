@@ -1,0 +1,15 @@
+.cards-conteiner{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls{
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  gap: 10px;
+}

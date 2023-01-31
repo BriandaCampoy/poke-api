@@ -1,12 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
+import Home from './routes/home/Home'
+
 
 function App() {
 
   return (
-    <div className="App">
-    </div>
+   <HashRouter>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      {/* <Route path="/:id" element={<Pokemon/>}/> */}
+    </Routes>
+   </HashRouter>
   )
 }
 
