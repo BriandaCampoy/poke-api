@@ -4,9 +4,57 @@
   border-radius:10px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
+.card:hover{
+  border: 1px solid #535bf2;
+}
+
 .types{
   display: flex;
   gap: 10px;
   justify-content: center;
+}
+.type{
+  border-radius:10px;
+  padding:3px;
+}
+.card__skeleton{
+
+  background: linear-gradient(90deg, rgb(114, 114, 114), rgb(97, 96, 96));
+  background-size: 400% 400%;
+  animation: loadingAnimation 1s ease-in-out infinite;
+}
+.title__skeleton{
+  height: 16px;
+  border-radius:10px;
+  background: linear-gradient(90deg, rgb(158, 158, 158), rgb(97, 96, 96));
+  background-size: 400% 400%;
+  animation: loadingAnimation 1.1s ease-in-out infinite;
+}
+.img__skeleton{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  margin:10px 0px;
+}
+.type__skeleton{
+  height: 16px;
+  width: 100px;
+  border-radius:10px;
+  background: linear-gradient(90deg, rgb(158, 158, 158), rgb(97, 96, 96));
+  background-size: 400% 400%;
+  animation: loadingAnimation 1.2s ease-in-out infinite;
+}
+@keyframes loadingAnimation{
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }
