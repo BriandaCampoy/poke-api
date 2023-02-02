@@ -20,30 +20,34 @@
   padding:3px;
 }
 .card__skeleton{
-
-  background: linear-gradient(90deg, rgb(114, 114, 114), rgb(97, 96, 96));
+  background: linear-gradient(90deg, rgb(62, 62, 62), #303030);
   background-size: 400% 400%;
   animation: loadingAnimation 1s ease-in-out infinite;
 }
 .title__skeleton{
   height: 16px;
   border-radius:10px;
-  background: linear-gradient(90deg, rgb(158, 158, 158), rgb(97, 96, 96));
+  margin:1em;
+  background: linear-gradient(90deg, rgb(62, 62, 62), #303030);
   background-size: 400% 400%;
   animation: loadingAnimation 1.1s ease-in-out infinite;
 }
 .img__skeleton{
   width: 100%;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content:center;
   margin:10px 0px;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 .type__skeleton{
   height: 16px;
-  width: 100px;
+  width: 100%;
   border-radius:10px;
-  background: linear-gradient(90deg, rgb(158, 158, 158), rgb(97, 96, 96));
+  margin: 1em;
+  background: linear-gradient(90deg, rgb(62, 62, 62), #303030);
   background-size: 400% 400%;
   animation: loadingAnimation 1.2s ease-in-out infinite;
 }
