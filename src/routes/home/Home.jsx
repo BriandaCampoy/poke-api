@@ -31,11 +31,13 @@ function Home() {
   }
 
   function getSearchedPoke() {
-    if(searchParams.get('search')!=''){
+    if(searchParams.get('search').length>2){
       pokeServices
         .getPokemon('https://pokeapi.co/api/v2/pokemon?offset=0&limit=1279')
         .then((res) => {
           setPokes(res.results.filter((poke) => poke.name.includes(searchParams.get('search'))));
+          setNext(res.next);
+          setPrevious(res.previous);
         })
         .catch((err) => {
           throw err;
